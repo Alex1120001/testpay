@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>История заявок - Пополняшка</title>
+    <title>Панель администратора - Пополняшка</title>
     <link rel="icon" href="./images/logo.png">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
@@ -40,42 +40,56 @@
             </div>
         </div>
     </header>
-    <section class="history">
-        <h2>История моих заявок</h2>
-        <div class="card-history">
-            <h3>ID 1</h3>
-            <p><b>Сумма пополнения: </b>510 RUB</p>
-            <p><b>Игра: </b>War Thunder</p>
-            <p><b>Номер карты получателя: </b>0969352474</p>
-            <p><b>ФИО плательщика: </b>132123123</p>
-            <p><b>Телеграмм для связи: @test</b></p>
-            <p><b>Время: </b>11:12 12/02/2022</p>
-            <p><b>Статус: </b><span class="eror">отклонена</span></p>
-            <p><a href="./images/sber.jpeg" download>Квитанция</a></p>
+    <section class="pay-game">
+        <h2>Панель администратора</h2>
+        <div class="btn-admin">
+            <a href="admin-rew.html">Отзывы</a>
+            <a href="admin-panel.html">Заявки</a>
+            <a href="admin-add.html">Добавление услуг</a>
         </div>
-        <div class="card-history">
-            <h3>ID 1</h3>
-            <p><b>Сумма пополнения: </b>510 RUB</p>
-            <p><b>Игра: </b>War Thunder</p>
-            <p><b>Номер карты получателя: </b>0969352474</p>
-            <p><b>ФИО плательщика: </b>132123123</p>
-            <p><b>Телеграмм для связи: @test</b></p>
-            <p><b>Время: </b>11:12 12/02/2022</p>
-            <p><b>Статус: </b><span class="succes">Успешно выполнена</span></p>
-            <p><a href="./images/sber.jpeg" download>Квитанция</a></p>
-        </div>
-        <div class="card-history">
-            <h3>ID 1</h3>
-            <p><b>Сумма пополнения: </b>510 RUB</p>
-            <p><b>Игра: </b>War Thunder</p>
-            <p><b>Номер карты получателя: </b>0969352474</p>
-            <p><b>ФИО плательщика: </b>132123123</p>
-            <p><b>Телеграмм для связи: @test</b></p>
-            <p><b>Время: </b>11:12 12/02/2022</p>
-            <p><b>Статус: </b><span class="test">На проверке</span></p>
-            <p><a href="./images/sber.jpeg" download>Квитанция</a></p>
+
+        <div class="wrap-admin-panel">
+            <div class="card-history">
+                <h3>ID 1</h3>
+                <p><b>Сумма пополнения: </b>510 RUB</p>
+                <p><b>Игра: </b>War Thunder</p>
+                <p><b>Номер карты получателя: </b>0969352474</p>
+                <p><b>ФИО плательщика: </b>132123123</p>
+                <p><b>Телеграмм для связи: @test</b></p>
+                <p><b>Время: </b>11:12 12/02/2022</p>
+                <p><b>Статус: </b><span class="eror">Отклонена</span></p>
+                <p><a href="./images/sber.jpeg" download>Квитанция</a></p>
+            </div>
+            <div class="card-history">
+                <h3>ID 1</h3>
+                <p><b>Сумма пополнения: </b>510 RUB</p>
+                <p><b>Игра: </b>War Thunder</p>
+                <p><b>Номер карты получателя: </b>0969352474</p>
+                <p><b>ФИО плательщика: </b>132123123</p>
+                <p><b>Телеграмм для связи: @test</b></p>
+                <p><b>Время: </b>11:12 12/02/2022</p>
+                <p><b>Статус: </b><span class="succes">Успешно выполнена</span></p>
+                <p><a href="./images/sber.jpeg" download>Квитанция</a></p>
+            </div>
+            <div class="card-history">
+                <h3>ID 1</h3>
+                <p><b>Сумма пополнения: </b>510 RUB</p>
+                <p><b>Игра: </b>War Thunder</p>
+                <p><b>Номер карты получателя: </b>0969352474</p>
+                <p><b>ФИО плательщика: </b>132123123</p>
+                <p><b>Телеграмм для связи: @test</b></p>
+                <p><b>Время: </b>11:12 12/02/2022</p>
+                <p><b>Статус: </b>
+                    <select name="" id="">
+                        <option value="#">Успешно выполнена</option>
+                        <option value="#">Отклонена</option>
+                    </select>
+                </p>
+                <p><a href="./images/sber.jpeg" download>Квитанция</a></p>
+            </div>
         </div>
     </section>
+
     <footer>
         <div class="wrap-footer">
             <p>
@@ -106,6 +120,9 @@
             <h4>© Пополняшка 2010-2022. Все права защищены.</h4>
         </div>
     </footer>
+    <!-- modal -->
+
+    <!-- end modal -->
     <script src="./js/js.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
@@ -121,6 +138,32 @@
                 prevEl: ".swiper-button-prev",
             },
         });
+
+        //dwopdown
+        $(".dropdown img.flag").addClass("flagvisibility");
+        $(".dropdown dt a").click(function() {
+            $(".dropdown dd ul").toggle();
+        });
+                    
+        $(".dropdown dd ul li a").click(function() {
+            var text = $(this).html();
+            $(".dropdown dt a span").html(text);
+            $(".dropdown dd ul").hide();
+            $("#result").html(getSelectedValue("sample"));
+        });
+                    
+        function getSelectedValue(id) {
+            return $("#" + id).find("dt a span.value").html();
+        }
+    
+        $(document).bind('click', function(e) {
+            var $clicked = $(e.target);
+            if (! $clicked.parents().hasClass("dropdown"))
+                $(".dropdown dd ul").hide();
+        });
+    
+        $(".dropdown img.flag").toggleClass("flagvisibility");
+
     </script>
 </body>
 
