@@ -3,7 +3,7 @@
     src: url("../fonts/Cera Pro Regular.otf") format("opentype");
 }
 body,html{
-    background: linear-gradient(90deg, rgba(91,85,184,1) 19%, rgba(173,98,189,1) 79%, rgba(23,117,153,1) 93%, rgba(50,144,163,1) 100%);
+    background: linear-gradient(90deg, rgba(91,85,184,1) 12%, rgba(129,24,152,1) 72%, rgba(70,23,153,1) 94%, rgba(99,48,154,1) 100%);
     padding: 0;
     margin: 0;
     font-family: "Cera Pro";
