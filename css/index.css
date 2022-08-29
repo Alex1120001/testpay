@@ -113,8 +113,7 @@ header{
     width: 100%;
 }
 .card{
-    background-image: url(../images/img-card.jpeg);
-    height: 150px;
+    background-color:#fff;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -294,29 +293,22 @@ img{
     margin-right: 10px;
 }
 .pay button{
-    height: 25px;
+    height: 35px;
     border:none;
     margin-top: 10px;
+    background:#0b080e;
+    color:#fff;
+}
+.main-a img{
+    max-width: 100%;
+    display: flex;
+    height: 100%;
+    margin: auto;
 }
 .pay h3{
     margin-bottom: 0px;
 }
-#current_page {
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-}
-#current_menu ul{
-    padding-left: 0px;
-}
-#current_menu ul li a img {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-}
-#current_menu ul li {
-    list-style: none;
-}
+
 .history{
     width: 85%;
     margin: 80px auto 40px;
@@ -386,7 +378,96 @@ img{
     text-decoration: none;
     color:rgb(44, 98, 197);
 }
-
+/* css dropdown */
+.desc { color:#6b6b6b;}
+    .desc a {color:#0092dd;}
+    
+    .dropdown dd, .dropdown dt, .dropdown ul { margin:0px; padding:0px; }
+    .dropdown dd { position:relative; }
+    .dropdown a, .dropdown a:visited { color:#816c5b; text-decoration:none; outline:none;}
+    .dropdown a:hover { color:#5d4617;}
+    .dropdown dt a:hover { color:#5d4617; border: 1px solid #d0c9af;}
+    .dropdown dt a {background:#e4dfcb url('http://www.jankoatwarpspeed.com/wp-content/uploads/examples/reinventing-drop-down/arrow.png') no-repeat scroll right center; display:block; padding-right:20px;
+                    border:1px solid #d4ca9a;}
+    .dropdown dt a span {cursor:pointer; display:block; padding:5px;}
+    .dropdown dd ul { background:#fff none repeat scroll 0 0; border:1px solid #d4ca9a; color:#C5C0B0; display:none;
+                      left:0px; padding:5px 0px; position:absolute; top:2px; width:100%; list-style:none;}
+    .dropdown span.value { display:none;}
+    .dropdown dd ul li a { padding:5px; display:block;}
+    .dropdown dd ul li a:hover { background-color:#d0c9af;}
+    
+    .dropdown img.flag { border:none; vertical-align:middle; margin-left:10px; }
+    .flagvisibility { display:none;}
+#sample{
+    margin: 0;
+}
+.dropdown img{
+    height: 40px;
+    margin-right: 10px;
+}
+.add{
+    color:#fff;
+    border: 1px solid #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+#ex2{
+    color:#333;
+}
+.add-form {
+    color:#333;
+    display: flex;
+    flex-direction: column;
+}
+.add-form  input{
+    height: 25px;
+}
+.add-form  textarea{
+    margin-top: 15px;
+}
+.add-form button{
+    margin-top: 10px;
+    height: 30px;
+    background:rgb(24, 101, 189);
+    color:#fff;
+    border-radius:5px;
+    border:none;
+}
+.log-admin{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    box-sizing:border-box;
+}
+.log-admin input+input{
+    margin-top: 10px;
+}
+.log-admin input{
+    height: 25px;
+}
+.log-admin button{
+    height: 30px;
+    margin-top: 10px;
+}
+.btn-admin a{
+    color:#fff;
+    text-decoration: none;
+    border:1px solid #fff;
+    border-radius:5px;
+    padding: 5px 10px;
+}
+.btn-admin a+a{
+    margin-left: 10px;
+}
+.wrap-admin-panel{
+    margin-top: 50px;
+}
+#value{
+    border:none;
+    width: 50px;
+    text-align: center;
+}
 @media (min-width:900px){
     .burger-icon{
         display: none;
@@ -411,6 +492,11 @@ img{
     }
     .wrap-menu span a{
         color:#fff;
+        transition: .2s;
+    }
+    .wrap-menu span a:hover{
+        color:silver;
+        transition: .2s;
     }
     .close{
         display: none;
@@ -425,17 +511,16 @@ img{
     }
     
     .block-card{
-        grid-template-columns: 49% 49%;
+        grid-template-columns: 32% 32% 32%;
     }
     .block-rewiews{
         display: grid;
         grid-template-columns: 30% 30% 30%;
         justify-content: space-between;
+        grid-row-gap: 20px;
     }
     .block-rewiews .rew{
         margin-top: 0px;
     }
-    .card{
-        height: 200px;
-    }
+    
 }
