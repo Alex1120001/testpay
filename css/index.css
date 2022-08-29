@@ -197,15 +197,16 @@ footer p{
 }
 .block-rewiews{
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 48% 48%;
+    justify-content: space-between;
+    grid-row-gap:10px;
 }
-.rew+.rew{
-    margin-top: 15px;
-}
+
 .rew{
     background:#fff;
     color:#333;
-    padding: 20px;
+    padding: 0px 20px;
+    font-size: 14px;
     border-radius:10px;
     border:2px solid silver;
     box-sizing: border-box;
