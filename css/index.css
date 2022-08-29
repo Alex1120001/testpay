@@ -97,9 +97,12 @@ header{
 }
 .block-card{
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 48% 48%;
     justify-content: space-between;
     grid-row-gap: 20px;
+}
+video{
+    max-width: 100%;
 }
 .name-game{
     position: absolute;
@@ -114,13 +117,14 @@ header{
     width: 100%;
 }
 .card{
-    background-color:#fff;
+    border-radius:10px;
+    background:#fff;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     overflow: hidden;
     display: flex;
-    box-shadow: 1px 5px 5px #7c5e96;
+    height: 95px;
 }
 .main-a{
     width: 100%;
@@ -403,7 +407,7 @@ img{
     margin: 0;
 }
 .dropdown img{
-    height: 40px;
+    width: 40px;
     margin-right: 10px;
 }
 .add{
@@ -519,7 +523,7 @@ img{
     }
     
     .block-card{
-        grid-template-columns: 32% 32% 32%;
+        grid-template-columns: 24% 24% 24% 24%;
     }
     .rew{
         display: flex;
